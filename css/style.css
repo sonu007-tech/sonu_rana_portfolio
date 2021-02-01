@@ -592,6 +592,16 @@ header {
     -ms-grid-column: 3;
   }
 }
+@media(max-width:576px){
+  .my-services {
+    background-color: var(--clr-dark);
+    background-image: url(../img/pexels-julien-brion-102061.jpg);
+    background-size: cover;
+    /* background-blend-mode: multiply; */
+    color: var(--clr-light);
+    text-align: center;
+  }
+}
 
 /* My Work */
 
@@ -649,6 +659,9 @@ header {
 }
 .portfolio__img.portfolio__work3__display {
   background-image: url(../img/Brew-EZ.png);
+}
+.portfolio__img.portfolio__work4__display {
+  background-image: url(../img/foodrecipe.png);
 }
 .portfolio__work:hover .portfolio__img {
   height: 20%;
@@ -720,11 +733,23 @@ header {
     max-width: 500px;
     height: 256px;
   }
+  .portfolio__work__desc h1 {
+    font-size: 2em;
+  }
+  .portfolio__work__desc p {
+    font-size: 1.2em;
+  }
 }
 @media (max-width: 576px) {
   .portfolio__work {
     max-width: 361px;
     height: 183px;
+  }
+  .portfolio__work__desc h1 {
+    font-size: 1.2em;
+  }
+  .portfolio__work__desc p {
+    font-size: 0.9em;
   }
 }
 @media (max-width: 425px) {
