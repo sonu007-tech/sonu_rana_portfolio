@@ -10,3 +10,12 @@ navLinks.forEach((link) => {
     document.body.classList.remove("nav-open");
   });
 });
+
+let progress = document.getElementById('progress-bar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+window.addEventListener('scroll', function() {
+	let progressHeight = (window.pageYOffset / totalHeight) * 100;
+	
+	progress.style.height = `${progressHeight}%`;
+});
